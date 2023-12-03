@@ -8,13 +8,13 @@ import data from './data'
 
 
 const App = () => {
-   const mainSection = data.map(item => <Main  key={item.title} {...item}/>)
-    return (
-       <>
-        <Header />
-        {mainSection}
-       </>
-    )
+   const mainSection = data.map(item => <Main key={item.title} {...item} />)
+   return (
+      <div>
+         <Header />
+         {mainSection}
+      </div>
+   )
 }
 
 export default App
